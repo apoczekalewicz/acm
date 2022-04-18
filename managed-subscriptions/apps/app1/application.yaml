@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: app1
   namespace: app1
+  labels:
+    app: app1
 spec:
   componentKinds:
     - group: apps.open-cluster-management.io
