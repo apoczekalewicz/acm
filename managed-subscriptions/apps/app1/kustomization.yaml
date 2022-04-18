@@ -4,4 +4,3 @@ resources:
 - placementrule.yaml
 - subscription.yaml
 - application.yaml
-- namespace2.yaml
