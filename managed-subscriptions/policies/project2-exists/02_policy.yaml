@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
 metadata:
-  name: project1-exists
+  name: project2-exists
   namespace: acmconf
   annotations:
     policy.open-cluster-management.io/standards: NIST-CSF
@@ -15,7 +15,7 @@ spec:
         apiVersion: policy.open-cluster-management.io/v1
         kind: ConfigurationPolicy
         metadata:
-          name: project1-exists
+          name: project2-exists
         spec:
           remediationAction: inform
           severity: low
@@ -30,4 +30,4 @@ spec:
                 kind: Namespace
                 apiVersion: v1
                 metadata:
-                  name: project1
+                  name: project2

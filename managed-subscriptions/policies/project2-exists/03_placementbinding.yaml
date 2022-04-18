@@ -4,10 +4,10 @@ metadata:
   name: binding-policy-namespace-project2
   namespace: acmconf
 placementRef:
-  name: project1-exists-pr
+  name: project2-exists-pr
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
-  - name: project1-exists
+  - name: project2-exists
     kind: Policy
     apiGroup: policy.open-cluster-management.io
