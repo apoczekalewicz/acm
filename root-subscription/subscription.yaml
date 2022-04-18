@@ -1,7 +1,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: acmconf-sub
+  name: acmconf
   namespace: acmconf
   annotations:
     apps.open-cluster-management.io/github-branch: master
@@ -9,6 +9,4 @@ metadata:
 spec:
   channel: acmconf-ch/acmconf
   placement: 
-    placementRef: 
-      kind: PlacementRule
-      name: local-cluster
+    local: true

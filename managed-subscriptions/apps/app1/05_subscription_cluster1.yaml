@@ -9,7 +9,7 @@ metadata:
     apps.open-cluster-management.io/github-branch: master
     apps.open-cluster-management.io/github-path: common-managed/apps/app1/
 spec:
-  channel: app1-ch/git1
+  channel: acmconf-ch/acmconf
   placement: 
     placementRef: 
       kind: PlacementRule

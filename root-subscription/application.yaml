@@ -4,6 +4,6 @@ metadata:
   name: acmconf
   namespace: acmconf
 spec:
-  componentKinds:
-  - group: apps.open-cluster-management.io/v1
-    kind: Subscription
+  selector:
+    matchLabels:
+      app: acmconf
