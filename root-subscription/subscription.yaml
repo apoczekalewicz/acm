@@ -2,6 +2,8 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
   name: acmconf
+  labels: 
+    app: acmconf
   namespace: acmconf
   annotations:
     apps.open-cluster-management.io/github-branch: master
