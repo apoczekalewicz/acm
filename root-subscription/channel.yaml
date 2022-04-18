@@ -1,0 +1,8 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: acmconf
+  namespace: acmconf-ch
+spec:
+  pathname: 'https://github.com/apoczekalewicz/acm.git'
+  type: GitHub
