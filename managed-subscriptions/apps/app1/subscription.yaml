@@ -13,4 +13,4 @@ spec:
   placement: 
     placementRef: 
       kind: PlacementRule
-      name: localcluster
+      name: local-cluster
