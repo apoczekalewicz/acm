@@ -1,15 +1,15 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: web-app-localcluster
+  name: app1
   namespace: app1
   labels:
-    deployment: hello
+    deployment: app1
   annotations:
     apps.open-cluster-management.io/github-branch: master
-    apps.open-cluster-management.io/github-path: 2/assets/overlays/cluster1
+    apps.open-cluster-management.io/github-path: common-managed/apps/app1/
 spec:
-  channel: demo-acm-2-ch/git1
+  channel: app1-ch/git1
   placement: 
     placementRef: 
       kind: PlacementRule

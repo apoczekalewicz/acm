@@ -1,7 +1,7 @@
 apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
-  name: web-app     
+  name: app1
   namespace: app1
 spec:
   selector:
@@ -9,7 +9,7 @@ spec:
       - key: deployment  
         operator: In
         values:
-        - hello 
+        - app1
   componentKinds:
   - group: apps.open-cluster-management.io/v1
     kind: Subscription

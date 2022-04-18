@@ -4,5 +4,5 @@ metadata:
   name: git1
   namespace: app1-ch
 spec:
-  pathname: 'https://github.com/apoczekalewicz/demo-acm.git'
+  pathname: 'https://github.com/apoczekalewicz/acm.git'
   type: GitHub
