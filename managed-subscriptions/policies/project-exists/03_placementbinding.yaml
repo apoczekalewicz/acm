@@ -1,0 +1,13 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PlacementBinding
+metadata:
+  name: binding-policy-namespace-project2
+  namespace: acmconf
+placementRef:
+  name: project2-exists-pr
+  kind: PlacementRule
+  apiGroup: apps.open-cluster-management.io
+subjects:
+  - name: project2-exists
+    kind: Policy
+    apiGroup: policy.open-cluster-management.io
