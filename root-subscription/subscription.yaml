@@ -6,7 +6,7 @@ metadata:
     app: acmconf
   namespace: acmconf
   annotations:
-    apps.open-cluster-management.io/current-namespace-scoped: "true"
+    apps.open-cluster-management.io/current-namespace-scoped: "false"
     apps.open-cluster-management.io/github-branch: master
     apps.open-cluster-management.io/github-path: managed-subscriptions
 spec:
