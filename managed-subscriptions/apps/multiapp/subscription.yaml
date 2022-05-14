@@ -2,7 +2,6 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
   name: multiapp
-  namespace: multiapp
   labels:
     app: multiapp
   annotations:
@@ -13,4 +12,4 @@ spec:
   placement: 
     placementRef: 
       kind: PlacementRule
-      name: local-cluster
+      name: pr-multiapp
