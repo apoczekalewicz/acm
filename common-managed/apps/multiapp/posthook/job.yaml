@@ -1,7 +1,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
-  name: LB-reconfig
+  name: lb-reconfig
 spec:
   tower_auth_secret: controlleraccess
   job_template_name: LB-reconfig
