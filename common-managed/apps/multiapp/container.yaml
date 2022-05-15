@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: app2
-  name: app2
+    app: multiapp
+  name: multiapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app2
+      app: multiapp
   template:
     metadata:
       labels:
-        app: app2
+        app: multiapp
     spec:
       containers:
       - image: quay.io/apoczeka/fractal:latest
-        name: app2
+        name: multiapp
         ports:
         - containerPort: 8080

@@ -1,17 +1,17 @@
 apiVersion: kubevirt.io/v1alpha3
 kind: VirtualMachineInstanceReplicaSet
 metadata:
-  name: vmirs-vm
+  name: multiapp-vms
 spec:
   replicas: 2
   selector:
     matchLabels:
-      myvmi: vm
+      myvmi: multiapp
   template:
     metadata:
-      name: vm
+      name: multiapp
       labels:
-        myvmi: vm
+        myvmi: multiapp
     spec:
       domain:
         devices:

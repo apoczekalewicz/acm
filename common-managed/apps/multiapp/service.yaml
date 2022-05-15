@@ -3,14 +3,14 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: app2
-  name: app2
+    app: multiapp
+  name: multiapp
 spec:
   ports:
   - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
-    app: app2
+    app: multiapp
   sessionAffinity: None
   type: ClusterIP

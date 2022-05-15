@@ -1,11 +1,11 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: hpavm
+  name: multiapp-vms
 spec:
   scaleTargetRef:
     kind: VirtualMachineInstanceReplicaSet
-    name: vmirs-vm
+    name: multiapp-vms
     apiVersion: kubevirt.io/v1alpha3
   minReplicas: 2
   maxReplicas: 5
