@@ -1,6 +1,8 @@
 apiVersion: kubevirt.io/v1alpha3
 kind: VirtualMachineInstanceReplicaSet
 metadata:
+  labels:
+    app: multiapp
   name: multiapp-vms
 spec:
   replicas: 2
