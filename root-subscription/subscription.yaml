@@ -12,5 +12,4 @@ metadata:
 spec:
   channel: acmconf-ch/acmconf
   placement:
-    clusters:
-      - name: "local-cluster"
+    local: true
