@@ -11,5 +11,7 @@ metadata:
     apps.open-cluster-management.io/github-path: managed-subscriptions
 spec:
   channel: acmconf-ch/acmconf
-  placement: 
-    local: true
+  placement:
+    clusterSelector:
+      matchLabels:
+        name: "local-cluster"
