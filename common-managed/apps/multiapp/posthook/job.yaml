@@ -4,7 +4,7 @@ metadata:
   name: lb-reconfig
 spec:
   tower_auth_secret: controlleraccess
-  job_template_name: lb-reconfig
+  job_template_name: lb_reconfig
   extra_vars:
     app_name: multiapp
     lb_domain: lb.example.lab
