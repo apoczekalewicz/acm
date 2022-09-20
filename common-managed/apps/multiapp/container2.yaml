@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: multiapp
+  name: otherapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: multiapp
+  template:
+    metadata:
+      labels:
+        app: multiapp
+    spec:
+      containers:
+      - image: quay.io/apoczeka/container-toolbox:latest
+        name: connection
+        command: ["/bin/bash"]
+        args: ["-c", "sleep infinity"]
