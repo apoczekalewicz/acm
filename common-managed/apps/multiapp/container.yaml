@@ -22,4 +22,7 @@ spec:
         resources:
           requests:
             cpu: 200m
-
+      - image: quay.io/apoczeka/container-toolbox:latest
+        name: connection
+        command: ["/bin/bash"]
+        args: ["-c", "while true; do curl http://multiapp-vms:22; sleep 600; done"]
