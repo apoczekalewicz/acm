@@ -8,14 +8,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: multiapp
+      app: otherapp
   template:
     metadata:
       labels:
-        app: multiapp
+        app: otherapp
     spec:
       containers:
       - image: quay.io/apoczeka/container-toolbox:latest
-        name: connection
+        name: otherapp
         command: ["/bin/bash"]
         args: ["-c", "sleep infinity"]
