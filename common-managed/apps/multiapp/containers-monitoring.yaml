@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: otherapp
-  name: otherapp
+    app: monitoring
+  name: monitoring
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: otherapp
+      app: monitoring
   template:
     metadata:
       labels:
-        app: otherapp
+        app: monitoring
     spec:
       containers:
       - image: quay.io/apoczeka/container-toolbox:latest
-        name: otherapp
+        name: monitoring
         command: ["/bin/bash"]
-        args: ["-c", "sleep infinity"]
+        args: ["-c", "while true; do echo Monitoring works.. ; sleep 5; done"]
