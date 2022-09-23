@@ -18,4 +18,4 @@ spec:
       - image: quay.io/apoczeka/container-toolbox:latest
         name: monitoring
         command: ["/bin/bash"]
-        args: ["-c", "while true; do echo Monitoring works.. ; sleep 5; done"]
+        args: ["-c", "while true; do echo Monitoring works.. ; curl http://multiapp:8080 &>/dev/null; sleep 5; done"]
