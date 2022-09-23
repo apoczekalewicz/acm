@@ -24,7 +24,7 @@ spec:
         resources:
           requests:
             memory: 128M
-            cpu: 800m
+            cpu: 1500m
       volumes:
       - name: containerdisk
         containerDisk:
